@@ -12,9 +12,9 @@ class BancoSerice:
 
     def pesquisar_conta_cliente(self, cpf):
         conta: Conta
-        for c in self.__contas:
-            if self.__contas[c].cpf == cpf:
-                conta = self.__contas[c]
+        for id, c in enumerate(self.__contas):
+            if c.cpf == cpf:
+                conta = self.__contas[id]
         return conta
 
     def listar_contas_alta_renda(self):
