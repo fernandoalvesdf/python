@@ -1,4 +1,4 @@
-class Banco:
+class Conta:
 
     def __init__(self, cpf):
         self.__cpf = cpf
